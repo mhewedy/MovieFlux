@@ -1,6 +1,6 @@
 package movieflux.user
 
-import movieflux.config.localDate
+import movieflux.ext.localDate
 import org.jetbrains.exposed.dao.LongIdTable
 import org.jetbrains.exposed.sql.ResultRow
 import org.jetbrains.exposed.sql.andWhere

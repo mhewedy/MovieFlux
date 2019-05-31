@@ -1,4 +1,4 @@
-package movieflux.config
+package movieflux.ext
 
 import org.jetbrains.exposed.sql.Column
 import org.jetbrains.exposed.sql.ColumnType
