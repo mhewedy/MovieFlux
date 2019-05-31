@@ -12,7 +12,7 @@ data class User(val firstName: String?,
                 val lastName: String?,
                 val birthDay: LocalDate?) {
 
-    companion object : LongIdTable() {
+    companion object Users : LongIdTable() {
         val first_name = text("first_name").nullable()
         val last_name = text("last_name").nullable()
         val birth_day = localDate("birth_day").nullable()

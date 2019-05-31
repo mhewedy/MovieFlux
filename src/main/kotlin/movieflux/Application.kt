@@ -1,8 +1,11 @@
 package movieflux
 
+import ch.qos.logback.classic.Level
+import ch.qos.logback.classic.Logger
 import movieflux.user.User
 import org.jetbrains.exposed.spring.SpringTransactionManager
 import org.jetbrains.exposed.sql.SchemaUtils
+import org.jetbrains.exposed.sql.exposedLogger
 import org.jetbrains.exposed.sql.transactions.transaction
 import org.springframework.boot.CommandLineRunner
 import org.springframework.boot.autoconfigure.SpringBootApplication
@@ -25,4 +28,5 @@ class Application : CommandLineRunner {
 
 fun main(args: Array<String>) {
     runApplication<Application>(*args)
+    (exposedLogger as Logger).level = Level.DEBUG
 }
